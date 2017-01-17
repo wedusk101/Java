@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class primeCheck
+public class PrimeChecker
 {
 
 	public static void main(String[] args)
