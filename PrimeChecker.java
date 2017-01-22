@@ -16,13 +16,13 @@ public class PrimeChecker
 				c++;
 			}
 		}
-		if(c==2)
+		if(c > 2 || n <= 0 || n == 1)
 		{
-				System.out.println(n + " is a prime number.");
+				System.out.println(n + " is not a prime number.");
 		}
 		else
 		{
-			System.out.println(n + " is not a prime number.");
+			System.out.println(n + " is a prime number.");
 		}
 	
 		
