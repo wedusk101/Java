@@ -1,4 +1,4 @@
-/*Navonil Mukherjee MCA 1682019
+/*
 The following code checks whether a number input by the user is an Armstrong number of not.
 An Armstrong number is a number that is the sum of its own digits each raised to the power 
 of the number of digits.e.g 153 = 1^3 + 5^3 + 3^3
