@@ -23,7 +23,7 @@ class ArmstrongCheck
 		while(input != 0)
 		{
 			digit = input % 10; // stores the digits of the number
-			sum = sum + (int)Math.pow(digit, digit_count); // Explicitly casts pow() to int and computes the sum
+			sum = sum + (int)Math.pow(digit, digit_count); // explicitly casts pow() to int and computes the sum
 			input = input / 10;
 		}
 		if(sum == bak)
