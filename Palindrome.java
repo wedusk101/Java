@@ -12,10 +12,10 @@ class Palindrome
 		in.close();
 	}
 	
-	void checkPal(int input)
+	void checkPal(int input) // function to check if a number is a palindrome
 	{
 		int rev = 0, digit = 0, bak = 0;
-		bak = input;
+		bak = input; // backup of the original number
 		while(input > 0)
 		{
 			digit = input % 10;

@@ -1,4 +1,6 @@
-// The following code checks if a prime number is a Mersenne prime or not. A Mersenne prime is of the form M = (2^N) - 1 where M is a prime number and N is a positive integer.
+/* The following code checks if a prime number is a Mersenne prime or not. 
+A Mersenne prime is of the form M = (2^N) - 1 where M is a prime number 
+and N is a positive integer.*/
 
 import java.util.*;
 

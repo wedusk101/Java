@@ -1,5 +1,8 @@
+/* The following code takes as input a string and displays those words which have
+odd number of letters in them.*/
+
 import java.util.Scanner;
-class OddString
+class OddString 
 {
 	public static void main(String args[])
 	{
@@ -13,7 +16,7 @@ class OddString
 		for(i = 0; i < len; i++)
 		{
 			ch = input.charAt(i);
-			if(ch != ' ' && ch != '.')
+			if(ch != ' ' && ch != '.') // whitespace or periods are used as delimiters
 			{
 				word = word + ch;
 			}
@@ -24,7 +27,7 @@ class OddString
 				{
 					System.out.println(word);
 				}
-				word = "";
+				word = ""; // the temporary string is reset for the next word
 			}
 		}
 		sc.close();
