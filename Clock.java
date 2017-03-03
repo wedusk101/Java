@@ -2,7 +2,6 @@
 A constructor initializes them with the given arguments. The method add() is used for calculating the result
 of adding the corresponding instance variables.*/
 
-import java.util.Scanner;
 class Time
 {
 	private int hour;
