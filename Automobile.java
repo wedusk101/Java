@@ -45,7 +45,7 @@ class Car extends Vehicle
 	
 	public Car(int regNumber, int speed, String color, String ownerName, String manufacturerName)
 	{
-		super(regNumber, speed, color, ownerName); // calls the constuctor of the super class
+		super(regNumber, speed, color, ownerName); // calls the constructor of the super class
 		this.manufacturerName = manufacturerName; // specific derived class data member
 	}
 
