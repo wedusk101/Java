@@ -25,7 +25,7 @@ class Quadrilateral
 		diag = Math.sqrt(Math.pow((x1 - x3), 2) + Math.pow((y1 - y3), 2));
 	}
 	
-	double calcArea()
+	double calcArea() // calculates the area for a generic quadrilateral using Heron's formula
 	{
 		calcSide();
 		semiperi1 = (side1 + side2 + diag) / 2;
