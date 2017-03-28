@@ -110,7 +110,7 @@ class DrvStud
 						System.out.println("Please enter the number of rooms in the hostel. Enter 0 if not applicable.");
 						numberofRooms = in.nextInt();
 						stu[i] = new Student(hostelName, hostelLocation, numberofRooms, studentName, regdNo, electiveSubject, avgMarks); // creates the student object
-						System.out.println("The Student has been admitted successfully.");
+						System.out.println("The student has been admitted successfully.");
 						++i;
 						break; // here a for-loop hasn't been used to dynamically add student objects and instantiating them according to the users choice
 				
