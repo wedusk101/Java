@@ -14,20 +14,20 @@ class Hostel
 {
 	String hostelName;
 	String hostelLocation;
-	int numberofRooms;
+	int roomNumber;
 	
-	public Hostel(String hostelName, String hostelLocation, int numberofRooms)
+	public Hostel(String hostelName, String hostelLocation, int roomNumber)
 	{
 		this.hostelName = hostelName;
 		this.hostelLocation = hostelLocation;
-		this.numberofRooms = numberofRooms;
+		this.roomNumber = roomNumber;
 	}
 	
 	void showHostelData()
 	{
 		System.out.println("The name of the hostel is " + hostelName + ".");
 		System.out.println("The hostel is located at " + hostelLocation + ".");
-		System.out.println("The hostel has " + numberofRooms + " rooms.");
+		System.out.println("The hostel has " + roomNumber + " rooms.");
 	}
 }
 
@@ -38,9 +38,9 @@ class Student extends Hostel implements Department
 	String electiveSubject;
 	double avgMarks;
 	
-	public Student(String hostelName, String hostelLocation, int numberofRooms, String studentName, int regdNo, String electiveSubject, double avgMarks)
+	public Student(String hostelName, String hostelLocation, int roomNumber, String studentName, int regdNo, String electiveSubject, double avgMarks)
 	{
-		super(hostelName, hostelLocation, numberofRooms); // calls the Hostel constructor
+		super(hostelName, hostelLocation, roomNumber); // calls the Hostel constructor
 		this.studentName = studentName;
 		this.regdNo = regdNo;
 		this.electiveSubject = electiveSubject;
@@ -69,8 +69,8 @@ class DrvStud
 {
 	public static void main(String args[])
 	{
-		int choice = 0, regdNo = 0, numberofRooms = 0, i = 0, size = 0;
-		String studentName, electiveSubject, hostelName, hostelLocation , deptName, deptHead;
+		int choice = 0, regdNo = 0, roomNumber = 0, i = 0, size = 0;
+		String studentName, electiveSubject, hostelName, hostelLocation;
 		double avgMarks = 0.0;
 		Scanner in = new Scanner(System.in);
 		System.out.println("How many records would you like to have on your database?");
@@ -83,7 +83,7 @@ class DrvStud
 			System.out.println("Enter 2 to see the details of a student.");
 			System.out.println("Enter 3 to exit.");
 			choice = in.nextInt();
-			start: // label to break to from the swtich case block
+			start: // label to break to from the switch case block
 			switch(choice)
 			{
 				case 1: 
@@ -100,16 +100,16 @@ class DrvStud
 						in.nextLine(); // consumes the pending return key from the buffer
 						System.out.println("Please enter the elective subject of the student.");
 						electiveSubject = in.nextLine();
-						System.out.println("Please enter the average marks of the student");
+						System.out.println("Please enter the average marks of the student.");
 						avgMarks = in.nextDouble();
 						in.nextLine(); // again consumes the pending return key
 						System.out.println("Please enter the name of the hostel where the student is residing.");
 						hostelName = in.nextLine();
 						System.out.println("Please enter the location of the hostel.");
 						hostelLocation = in.nextLine();
-						System.out.println("Please enter the number of rooms in the hostel. Enter 0 if not applicable.");
-						numberofRooms = in.nextInt();
-						stu[i] = new Student(hostelName, hostelLocation, numberofRooms, studentName, regdNo, electiveSubject, avgMarks); // creates the student object
+						System.out.println("Please enter the hostel room number of the student. Enter 0 if not applicable.");
+						roomNumber = in.nextInt();
+						stu[i] = new Student(hostelName, hostelLocation, roomNumber, studentName, regdNo, electiveSubject, avgMarks); // creates the student object
 						System.out.println("The student has been admitted successfully.");
 						++i;
 						break; // here a for-loop hasn't been used to dynamically add student objects and instantiating them according to the users choice
