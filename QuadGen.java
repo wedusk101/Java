@@ -130,9 +130,9 @@ class Square extends Rectangle
 
 public class QuadGen
 {
-	public static void main(String args[])
+	public static void main(String args[])// The values for the functions could also be taken as user input
 	{
-		double xc1 = 0.0, yc1 = 0.0, xc2 = 0.0, yc2 = 0.0, xc3 = 0.0, yc3 = 0.0, xc4 = 0.0, yc4 = 0.0;
+		//double xc1 = 0.0, yc1 = 0.0, xc2 = 0.0, yc2 = 0.0, xc3 = 0.0, yc3 = 0.0, xc4 = 0.0, yc4 = 0.0;
 		Quadrilateral quad = new Quadrilateral(2, 2 , 4, 2, 4, 4, 2, 4);
 		Trapezoid trap = new Trapezoid(2, 2 , 4, 2, 4, 4, 2, 4);
 		Parallelogram para = new Parallelogram(2, 2 , 4, 2, 4, 4, 2, 4);

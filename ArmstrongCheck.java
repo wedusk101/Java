@@ -30,5 +30,6 @@ class ArmstrongCheck
 			System.out.println("The number is an Armstrong number.");
 		else
 			System.out.println("The number is not an armstrong number.");
+		in.close();
 	}	
 } // end

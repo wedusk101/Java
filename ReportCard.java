@@ -4,7 +4,7 @@ class ReportCard
 	public static void main(String args[])
 	{
 		int report[][] = new int[3][5];
-		int i = 0, j = 0, sum = 0, highest = 0, pos = 0;
+		int i = 0, j = 0, highest = 0, pos = 0;
 		Scanner in = new Scanner(System.in);
 		System.out.println("Please enter the roll numbers of the students");
 		for( i = 0; i < 3; i++)

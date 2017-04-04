@@ -14,6 +14,7 @@ class PrimeCheck
 		Scanner in=new Scanner(System.in);
 		System.out.println("Enter a prime number.");
 		m=in.nextInt();
+		in.close();
 	}
 
 	public void isMersenne()
@@ -47,6 +48,5 @@ class Mersenne
 		PrimeCheck prime=new PrimeCheck();
 		prime.input();
 		prime.isMersenne();
-				
 	}
 }
