@@ -1,10 +1,7 @@
 import java.util.Scanner;
 class IllegalArgumentException extends Exception
 {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L; // IDE generated unified identifier
 
 	public void printOverflowError()
 	{
