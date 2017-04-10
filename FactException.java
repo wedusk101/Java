@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class IllegalArgumentException extends Exception
+class IllegalArgumentException extends Exception // custom Exception class to handle invalid input from the user
 {
 	private static final long serialVersionUID = 1L; // IDE generated unified identifier
 
@@ -27,8 +27,7 @@ public class FactException
 		{
 			try
 			{
-				IllegalArgumentException iae = new IllegalArgumentException();
-				throw iae;				
+				throw new IllegalArgumentException();	// creates and throws an object of type IllegalArgumentException			
 			}
 			catch(IllegalArgumentException iae)
 			{
@@ -40,8 +39,7 @@ public class FactException
 		{
 			try
 			{
-				IllegalArgumentException iae = new IllegalArgumentException();
-				throw iae;				
+				throw new IllegalArgumentException();				
 			}
 			catch(IllegalArgumentException iae)
 			{
