@@ -1,11 +1,9 @@
 /*The following program mimics a malicious program by invoking the notepad application
 in Windows continuously as long as it runs.*/
 
-import java.io.*;
-
 class ExecNotepadVirus
 {
-	public static void main(String[] args)throws InterruptedException, IOException
+	public static void main(String[] args)
 	{
 		while(true)
 		{
