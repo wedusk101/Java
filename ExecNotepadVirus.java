@@ -12,7 +12,7 @@ class ExecNotepadVirus
 			try{
 				Process p = Runtime.getRuntime().exec("notepad.exe");
 				p.waitFor(); // this line makes sure a new process is spawned only after the previous one is closed
-				Thread.sleep(1); // commenting out or removing the p.waitfor() function call can / will cause the system to hang
+				Thread.sleep(2000); // commenting out or removing the p.waitfor() function call can / will cause the system to hang
 			}
 			catch(Exception e)
 			{
