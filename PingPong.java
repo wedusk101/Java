@@ -60,8 +60,8 @@ class PingPong
 {
 	public static void main(String[] args)
 	{
-		Runnable r1 = new RandPrintPing();
-		Runnable r2 = new RandPrintPong();
+		RandPrintPing r1 = new RandPrintPing();
+		RandPrintPong r2 = new RandPrintPong();
 		Thread t1 = new Thread(r1);
 		Thread t2 = new Thread(r2);
 		while(true)
