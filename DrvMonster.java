@@ -1,4 +1,4 @@
-/*The following code tests the interface entension feature of Java.*/
+/*The following code tests the interface extension feature of Java.*/
 
 interface Bird
 {
