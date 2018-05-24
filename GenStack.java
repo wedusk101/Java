@@ -8,7 +8,7 @@ class CreateStack
 	void showPush(int x)
 	{
 		s.push(x);
-		System.out.println("Element has been pushed succesfully.");
+		System.out.println("Element has been pushed successfully.");
 	}
 	
 	void showPop()

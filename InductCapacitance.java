@@ -21,7 +21,7 @@ class InductCapacitance
 		l = input.nextDouble();
 		System.out.println("Please enter the capacitance in Farads.");
 		c = input.nextDouble();
-		System.out.println("Please enter the resitance in Ohms.");
+		System.out.println("Please enter the resistance in Ohms.");
 		r = input.nextDouble();
 		System.out.println("The table of frequencies in Hertz with the capacitance varying from 0.01 Farad through 0.1 Farad in steps of 0.01 Farad are:");
 		for(c = 0.01; c <= 0.1; c += 0.01)

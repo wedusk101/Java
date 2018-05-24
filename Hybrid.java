@@ -2,7 +2,7 @@
 Over here, a class "Osprey" is created that models the behavior of the real life V-22 Osprey aircraft
 which is a hybrid of a plane and a helicopter.The "chopper" interface declares two methods that
 describe two properties of a helicopter; its ability to take off vertically and the presence of rotors.
-The "airplane" class describes an aeroplane with its two data members, "wingspan" and "maxRange" and
+The "airplane" class describes an airplane with its two data members, "wingspan" and "maxRange" and
 the method usesRunway().The derived class "Osprey" integrates all these features just like its
 real life counterpart. */
 

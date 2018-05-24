@@ -14,7 +14,7 @@ class TriCheck
 			System.out.println("The three integers make up a triangle.");
 			if(first_side == second_side || second_side == third_side || third_side == first_side)
 			{
-				System.out.println("The triangle is an isoceles triangle.");
+				System.out.println("The triangle is an isosceles triangle.");
 			}
 			else if(first_side == second_side && second_side == third_side)
 			{
